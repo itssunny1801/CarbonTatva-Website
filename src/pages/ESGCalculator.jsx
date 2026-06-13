@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend, CartesianGrid } from 'recharts';
 import { Plus, Trash2, Calculator, Lock, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 import esgData from '../data/esg_raw_dump.json';
 
@@ -563,6 +564,7 @@ const ESGCalculator = () => {
       )}
 
     </main>
+    <Footer />
     </>
   );
 };

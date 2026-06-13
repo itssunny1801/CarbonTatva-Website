@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Database, BarChart2, TrendingUp, Zap, Lightbulb } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import Footer from '../components/Footer';
 
 const Offerings = () => {
   const offerings = [
@@ -34,6 +35,7 @@ const Offerings = () => {
   ];
 
   return (
+    <>
     <main
       className="animate-fade-in"
       style={{ background: "var(--bg-secondary)", paddingBottom: "6rem" }}
@@ -90,6 +92,8 @@ const Offerings = () => {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 };
 

@@ -2,9 +2,11 @@ import React from 'react';
 import { ArrowRight, Database, BarChart2, TrendingUp, FileSearch, Eye, Settings, Scale, ShieldCheck, CircleDollarSign, Clock, Target, LogIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
+    <>
     <main
       className="animate-fade-in"
       style={{ background: "white", paddingBottom: "0" }}
@@ -335,6 +337,8 @@ const Home = () => {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 };
 

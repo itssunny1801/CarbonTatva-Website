@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRight, LogIn } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Footer from "../components/Footer";
 
 const About = () => {
   const foundersInterns = [
@@ -66,6 +67,7 @@ const About = () => {
   );
 
   return (
+    <>
     <main
       className="animate-fade-in"
       style={{ background: "white", paddingBottom: "4rem" }}
@@ -180,6 +182,8 @@ const About = () => {
         </section>
       </div>
     </main>
+    <Footer />
+    </>
   );
 };
 

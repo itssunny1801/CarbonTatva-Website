@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Database, BarChart2, TrendingUp, Zap, Lightbulb, CheckCircle2 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import Footer from '../components/Footer';
 
 const Demo = () => {
   const [selectedInterests, setSelectedInterests] = useState([]);
@@ -467,6 +468,7 @@ const Demo = () => {
           </div>
         </div>
       </main>
+    <Footer />
     </>
   );
 };

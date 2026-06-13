@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Send, CheckCircle2 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import Footer from '../components/Footer';
 
 const RD = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -451,6 +452,7 @@ const RD = () => {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import Footer from "../components/Footer";
 
 const placeholderPosts = Array(6).fill(null).map((_, i) => ({
   id: i + 1,
@@ -12,6 +13,7 @@ const placeholderPosts = Array(6).fill(null).map((_, i) => ({
 
 const Blogs = () => {
   return (
+    <>
     <main className="animate-fade-in" style={{ background: "white", paddingBottom: "4rem" }}>
       <Helmet>
         <title>Blogs &amp; Articles | CarbonTatva AI</title>
@@ -82,6 +84,8 @@ const Blogs = () => {
 
       </div>
     </main>
+    <Footer />
+    </>
   );
 };
 
