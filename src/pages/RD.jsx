@@ -155,91 +155,97 @@ const RD = () => {
 
           {/* Papers Section */}
           <section className="papers-grid">
-            {/* Paper 1 */}
+            {/* Paper 1 — Springer */}
             <div className="paper-card">
+              <div className="hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px", marginBottom: "1rem", fontSize: "0.8rem" }}>
+                Journal · Springer Nature · Oct 23, 2025
+              </div>
               <h2 className="paper-title">
-                Climate Change: Impact of Global Warming on India’s Electricity
-                Consumption
-              </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
-              <p className="paper-summary">
-                This study analyses how rising temperatures influence
-                electricity demand across India, using state-level consumption
-                and weather data. It highlights how temperature variations
-                significantly impact demand patterns, with big regional and
-                socio-economic differences. The findings provide a foundation
-                for understanding climate-driven demand shifts, directly
-                informing how we model emissions sensitivity and forecast future
-                energy needs.
-              </p>
-              <button
-                className="btn btn-primary"
-                onClick={() => alert("Paper link coming soon!")}
-              >
-                Read Paper{" "}
-                <ExternalLink size={18} style={{ marginLeft: "8px" }} />
-              </button>
-            </div>
-
-            {/* Paper 2 */}
-            <div className="paper-card">
-              <h2 className="paper-title">
-                Energy Transition Modelling: Short-Term Electricity Demand
+                Energy Transition Modeling: Short-Term Electricity Demand
                 Forecasting Using Seq2Seq Encoder–Decoder Model
               </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
+              <div className="paper-authors" style={{ marginBottom: "0.5rem" }}>
+                Book: <em>Materials, Devices and Systems for Sustainability, IITK Directions, Volume 8</em>
+              </div>
               <p className="paper-summary">
-                This paper introduces a Seq2Seq LSTM-based approach for
-                short-term electricity demand forecasting that captures complex
-                temporal and weather-driven patterns. It demonstrates improved
-                forecasting performance compared to conventional methods,
-                offering a scalable framework for energy prediction. This work
-                informs our AI-native forecasting systems, enabling more
-                accurate emissions projections and better planning under dynamic
-                operational conditions.
+                This paper demonstrates a framework involving data processing on
+                input consumption data and deploying machine learning models to
+                forecast future demand based on consumption patterns and weather
+                features.
               </p>
+              <div className="paper-authors" style={{ marginTop: "1rem", fontSize: "0.875rem" }}>
+                Supervisor: Prof. Rajeev Jindal, Department of Sustainable Energy
+                Engineering, IIT Kanpur
+              </div>
               <a
                 href="https://link.springer.com/chapter/10.1007/978-981-96-7295-0_10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
+                style={{ marginTop: "1.25rem" }}
               >
-                Read Paper{" "}
+                Show Publication{" "}
                 <ExternalLink size={18} style={{ marginLeft: "8px" }} />
               </a>
             </div>
 
-            {/* Paper 3 */}
+            {/* Paper 2 — IEEE */}
             <div className="paper-card">
+              <div className="hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px", marginBottom: "1rem", fontSize: "0.8rem" }}>
+                Journal · IEEE Xplore · Sep 5, 2025
+              </div>
               <h2 className="paper-title">
                 A Smartphone-Based Hybrid Model for Real-Time Monitoring of
-                Aggressive Driving Behavior
+                Aggressive Driving Behavior using Multidimensional Dynamic Time
+                Warping
               </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
               <p className="paper-summary">
-                This paper highlights the core technical competency of
-                CarbonTatva AI by demonstrating our ability to process complex,
-                high-frequency sensor data (like telemetry) into actionable
-                insights using advanced hybrid modeling. By combining Dynamic
-                Time Warping (DTW) for temporal pattern recognition with Random
-                Forest for statistical classification, we showcase a
-                sophisticated approach to time-series analysis that is directly
-                transferable to carbon monitoring. Specifically, this expertise
-                allows us to precisely align and analyze fluctuating emission
-                patterns across various industrial processes, ensuring that our
-                sustainability dashboards provide a high level of accuracy in
-                detecting anomalies and forecasting environmental impact as seen
-                in driver behavior prediction.
+                This study proposes a hybrid model that uses multi-dimensional
+                Dynamic Time Warping (DTW) and machine learning techniques to
+                predict driver behaviour.
               </p>
+              <div className="paper-authors" style={{ marginTop: "1rem", fontSize: "0.875rem" }}>
+                Supervisor: Dr. Rahul Kumar Dubey, BOSCH Research
+              </div>
               <a
                 href="https://ieeexplore.ieee.org/document/11139729"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
+                style={{ marginTop: "1.25rem" }}
               >
-                Read Paper{" "}
+                Show Publication{" "}
                 <ExternalLink size={18} style={{ marginLeft: "8px" }} />
               </a>
+            </div>
+
+            {/* Paper 3 — Conference */}
+            <div className="paper-card">
+              <div className="hero-badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px", marginBottom: "1rem", fontSize: "0.8rem" }}>
+                Conference · 2nd Global Conference on Decarbonizing India
+              </div>
+              <h2 className="paper-title">
+                Climate Change: Impact of Global Warming on India’s Electricity
+                Consumption
+              </h2>
+              <p className="paper-summary">
+                In this study, we model the relationship between temperature and
+                residential electricity consumption of Indian states. Our
+                framework offers a way to predict, and potentially, prepare for
+                the changes in electricity consumption because of the
+                fluctuations in temperature due to global warming.
+              </p>
+              <div className="paper-authors" style={{ marginTop: "1rem", fontSize: "0.875rem" }}>
+                Supervisor: Prof. Rajeev Jindal, Department of Sustainable Energy
+                Engineering, IIT Kanpur
+              </div>
+              <button
+                className="btn btn-primary"
+                style={{ marginTop: "1.25rem", opacity: 0.7, cursor: "default" }}
+                disabled
+              >
+                Publication Link Coming Soon
+              </button>
             </div>
           </section>
 

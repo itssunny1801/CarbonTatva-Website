@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Offerings from "./pages/Offerings";
@@ -14,7 +13,6 @@ import Demo from "./pages/Demo";
 import ESGCalculator from "./pages/ESGCalculator";
 import Blogs from "./pages/Blogs";
 
-/* 👇 ADD THIS */
 const ScrollManager = () => {
   const location = useLocation();
 
@@ -69,7 +67,6 @@ function App() {
           <Route path="/esg-calculator" element={<ESGCalculator />} />
           <Route path="/blogs" element={<Blogs />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );
